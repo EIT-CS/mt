@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fcfbf9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    width: 65%;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    left: 250px;
+    display: flex;
+    
+}   
+.wrapper{
+    width: 100%;
+}
+header{
+    background-color: #fafafa;
+    color: rgb(250, 247, 247);
+    text-align: center;
+    padding: 11px 0;
+    position: relative;
+    
+}
+.logo{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 250px; 
+}
+nav ul {
+    list-style-type: none;   
+    display: flex;          
+    justify-content: center; 
+    gap: 20px;               
+    padding: 10px 0;
+    margin: 0;
+    background-color: rgb(40, 51, 51);
+}
+
+nav li a {
+    text-decoration: none;   
+    color: rgb(241, 240, 240);
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+nav li a:hover {
+    background-color: #fbfcfc;
+    border-radius: 5px;
+}
+
+
+aside{
+   width: 25%;
+    background-color: #f2f2f2;
+    padding: 15px;
+     border-radius: 10px;
+}
+main{
+    width: 75%;
+    padding: 15px;
+}
+main article h2 ,  p {
+    text-align: center;
+}
+
+footer{
+    background-color: #f5f0f0;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 0px;
+}
+sticky {
+  position: sticky;
+    top: 0;
+      z-index: 1000;
+}
+sticky p {
+  margin: 0;
+  font-size:10px;
+   font-weight:bold;
+   background-color: rgb(249, 251, 246);
+  text-align: center;
+}
+iframe {
+    margin-top: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.ad-image {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
