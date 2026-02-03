@@ -1,0 +1,62 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+}
+.logo {
+  display: inline-block;   /* inline → block шинжтэй болгоно */
+}
+.logo img {
+  height: 90px;
+  width: auto;
+}
+.logo {
+  margin-left: 190px;   /* зүүн талаас зай */
+}
+stcuk{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+stcuk p{
+text-align: left;
+background-color: azure;
+text
+
+}
+
+footer {
+  margin-top: 1000px;
+}
+.main{
+  display: flex;
+  width: 65%;
+  background-color: blue;
+
+}
+header{
+  display: flex;
+}
+nav {
+list-style-type: none;
+display: flex;
+  justify-content: center;
+gap: 20px;
+padding: 10px;
+background-color: rgb(231, 188, 13);
+}
+nav a{
+  text-decoration: none;
+  font-size: medium;
+  color: black;
+
+
+}
+
