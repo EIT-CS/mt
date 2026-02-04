@@ -11,7 +11,33 @@ body {
   align-items: center;
 }
 
+header {
+  background-color: aqua;
+}
 .container {
   width: 65%;
   background-color: white;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.guys {
+  color: greenyellow;
+  padding-top: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rebeccapurple;
+}
+nav .table-of-contents {
+  color: blue;
+}
+
+ul {
+  color: yellow;
 }
