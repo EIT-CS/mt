@@ -71,3 +71,14 @@ header img {
 .mainContent:first-child {
   opacity: 1;
 }
+
+section {
+  width: 100%;
+}
+.imgFirst {
+  background-image: url("./image/1.svg");
+  background-repeat: no-repeat;
+  width: 250px;
+  background-size: cover;
+  height: 370px;
+}
