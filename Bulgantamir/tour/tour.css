@@ -61,7 +61,7 @@ header img{
     top: 170px;
 }
 .main-content p:first-child{
-    filter: blur(2px);
+    opacity: 80%;
     font-size: 80px;
 }
 .main-content p{
@@ -69,7 +69,7 @@ header img{
 }
 .main-content p:last-child{
     font-size: 64px;
-    filter: blur(1px);
+    opacity: 80%;
 }
 footer{
     background-color: aqua;
