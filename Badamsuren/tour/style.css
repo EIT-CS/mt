@@ -1,0 +1,91 @@
+.container {
+  background-image: url("./image/HeroImage.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 773px;
+  position: relative;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu span {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.logo img {
+    height: 40px;
+    width: auto;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.language {
+  width: 36px;
+  height: 36px;
+  background: white;
+  color: #000;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+}
+.subtitle {
+  font-size: 58px;
+  letter-spacing: 4px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 126px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+
+.year {
+  margin-top: 20px;
+  font-size: 52px;
+  font-weight: 600;
+}
+

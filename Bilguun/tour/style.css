@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+body {
+  width: 100vw;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-image: url("./image/HeroImage.svg");
+  height: 773px;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 118px;
+}
+
+header img {
+  height: 34px;
+}
+.headerContent {
+  gap: 24px;
+}
+
+.headerContent-first {
+  gap: 24px;
+  color: white;
+}
+
+.headerContent-first span {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.language {
+  background-color: white;
+  border-radius: 100%;
+  padding: 14px;
+}
+.language span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.mainContent:first-child {
+  opacity: 1;
+}
