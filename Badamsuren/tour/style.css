@@ -15,7 +15,7 @@ header {
 .header {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 16px;
+  padding: 33px 118px;
 
   display: flex;
   align-items: center;
@@ -23,17 +23,20 @@ header {
 }
 .menu {
   display: flex;
-  gap: 50px;
+  gap: 24px;
 }
 
 .menu span {
   color: white;
-  font-size: 20px;
+  width: 100px;
+  height: 22px;
+  gap: 10px;
   cursor: pointer;
+  font-size: 18px;
 }
 .logo img {
-    height: 40px;
-    width: auto;
+    height: 34px;
+    width: 100px;
 }
 .right {
   display: flex;
@@ -42,11 +45,11 @@ header {
 }
 
 .language {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   background: white;
   color: #000;
-  border-radius: 50%;
+  border-radius: 24px;
 
   display: flex;
   align-items: center;
@@ -66,19 +69,19 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   color: white;
 }
 .subtitle {
-  font-size: 58px;
-  letter-spacing: 4px;
+  font-size: 60px;
+  letter-spacing: 0px;
   opacity: 0.7;
   margin-bottom: 10px;
 }
 
 .title {
-  font-size: 126px;
-  font-weight: 800;
+  font-size: 150px;
   line-height: 1;
   margin: 0;
 }
