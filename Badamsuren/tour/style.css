@@ -6,12 +6,14 @@
   height: 773px;
   position: relative;
 }
+
 header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
+
 .header {
   max-width: 1200px;
   margin: 0 auto;
@@ -21,6 +23,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 .menu {
   display: flex;
   gap: 50px;
@@ -31,10 +34,12 @@ header {
   font-size: 20px;
   cursor: pointer;
 }
+
 .logo img {
-    height: 40px;
-    width: auto;
+  height: 40px;
+  width: auto;
 }
+
 .right {
   display: flex;
   align-items: center;
@@ -56,6 +61,7 @@ header {
   font-weight: 600;
   cursor: pointer;
 }
+
 .text {
   position: absolute;
   top: 45%;
@@ -69,6 +75,7 @@ header {
 
   color: white;
 }
+
 .subtitle {
   font-size: 58px;
   letter-spacing: 4px;
@@ -87,5 +94,182 @@ header {
   margin-top: 20px;
   font-size: 52px;
   font-weight: 600;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 50px 0;
+  background-image: url(./image/Location\ image.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.location .photo {
+  position: relative;
+  height: 370px;
+}
+
+.location .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgb(131, 132, 135);
+}
+
+.photo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  pointer-events: none;
+}
+
+.map {
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  height: 1022px;
+  background-image: url(./image/Roadmap\ image.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.maptext {
+  position: absolute;
+  top: 90px;
+  left: 36%;
+  text-align: center;
+}
+.mapday {
+  position: absolute;
+  top: 260px;
+  left: 80px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.day1 {
+  width: 460px;
+  padding: 10px 32px;
+  background: #f4efe3;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.day2 {
+  width: 460px;
+  padding: 10px 32px;
+  background: #8BB8C1CC;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.day3 {
+  width: 460px;
+  padding: 10px 32px;
+  background: #AAD8D7CC;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.day4 {
+  width: 460px;
+  padding: 10px 32px;
+  background: #8BC0BDCC;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.day5 {
+  width: 460px;
+  padding: 10px 32px;
+  background: #97CCE0CC;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.day-text {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.location-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  
+  font-size: 14px;
+  color: #555;
+}
+
+.location-text img {
+  width: 14px;
+  height: 14px;
+}
+
+.day-circle {
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+.map-image{
+  position: absolute;
+  left: 1000px;
+  top: 300px;
+}
+.mapimage img {
+  width: 34px;
+  height: 34px;
+}
+.map-image1{
+  position: absolute;
+  left: 800px;
+  top: 450px;
+}
+.map-image2{
+  position: absolute;
+  left: 1200px;
+  top: 450px;
+}
+.map-image3{
+  position: absolute;
+  left: 1000px;
+  top: 670px;
 }
 
