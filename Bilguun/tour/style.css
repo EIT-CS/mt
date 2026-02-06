@@ -7,6 +7,9 @@
 .flex {
   display: flex;
 }
+.flex-direction {
+  flex-direction: column;
+}
 
 .justify-center {
   justify-content: center;
@@ -25,7 +28,10 @@ body {
   width: 100%;
   margin: auto;
   font-family: Arial, sans-serif;
+}
+.homeSection {
   background-image: url("./image/HeroImage.svg");
+  background-repeat: no-repeat;
   height: 773px;
 }
 
@@ -68,17 +74,32 @@ header img {
   line-height: 19px;
 }
 
-.mainContent:first-child {
-  opacity: 1;
+.mainContent {
+  height: 100%;
+  color: #fdfdfe;
 }
 
-section {
-  width: 100%;
+.puteMagic {
+  opacity: 0.5;
+  font-size: 80px;
+  font-weight: 600;
 }
-.imgFirst {
-  background-image: url("./image/1.svg");
-  background-repeat: no-repeat;
-  width: 250px;
-  background-size: cover;
+
+.awaits {
+  font-size: 250px;
+  font-weight: 600;
+}
+
+.year {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.sectionTwo {
+  background-color: #d8e4e9;
+  width: 100vw;
+}
+
+.sectionTwo img {
   height: 370px;
 }
