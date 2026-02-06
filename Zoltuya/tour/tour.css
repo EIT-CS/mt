@@ -189,14 +189,13 @@ width: 275.49px;
   background-image: url(/Zoltuya/tour/img/Roadmap\ image.png);
   background-size: contain;
  width: 100%;
- height: 773px;
+ height: 952px;
 }
 .pgTwo{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
-  
 }
 .dest{
 font-size: 40px; 
@@ -208,12 +207,10 @@ font-weight: bold;
   opacity: 70%;
 }
 .section{
- 
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  
-  
+  padding: 50px 120px;
+  gap: 20px;
 }
 .fristWord{
   font-size: x-large;
@@ -229,14 +226,11 @@ font-weight: bold;
 }
 .Day1{
    display: flex;
-  
   justify-content: space-between;
   align-items: center;
   background-color: #EEE9D9;
   width: 400px;
-  padding: 25px;
-  margin:  70px;
-  margin-right: 15px;
+  padding: 32px 32px;
   border-radius: 50px;
 }
 .one{
@@ -255,14 +249,10 @@ justify-content: center;
 }
 .Day2{
    display: flex;
-    margin-top: 8px;
-
   justify-content: space-between;
   align-items: center;
   background-color: #EEE9D9;
   width: 400px;
-  padding: 25px;
-  margin:  70px;
-  margin-right: 15px;
+  padding: 32px 32px;
   border-radius: 50px;
 }
