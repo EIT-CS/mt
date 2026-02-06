@@ -71,6 +71,36 @@ header img{
     font-size: 64px;
     opacity: 80%;
 }
+<<<<<<< Updated upstream
+=======
+.section{
+    display: flex;
+    bottom: auto;
+    width: 100%;
+    margin: auto;
+    height: 512px;
+    background-image: url("gallery/Location.png");
+    background-size: cover;
+    gap: 40px;
+    padding: 80px 118px;
+}
+.section .carts{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.carts .TERKHIIN p {
+    position: absolute;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.carts img {
+width: 275px;
+height: 370px;
+}
+>>>>>>> Stashed changes
 footer{
     background-color: aqua;
     margin-top: 1000px;
