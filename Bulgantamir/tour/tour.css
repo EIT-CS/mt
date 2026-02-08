@@ -79,30 +79,38 @@ header img {
   padding: 80px 118px;
   gap: 40px;
 }
-.section .cart {
-  display: flex;
-}
 .cart {
+  display: flex;
   position: relative;
+  cursor: pointer;
   width: 275px;
   height: 370px;
 }
+.cart:hover {
+  display: flex;
+  border-radius: 10%;
+  transition: 0.3s;
+  filter: drop-shadow(#000000);
+}
 .cart img {
   border-radius: 10%;
-  box-shadow: 100%;
-  box-shadow: darkblue;
+  box-shadow:
+    8px 8px 2px rgb(31 114 170 / 20%),
+    -8px -8px 2px rgb(41 114 139 / 50%),
+    0px 4px 20px rgb(0 0 0 / 5%);
 }
-.section .cart span {
+.cart span {
   color: rgb(253, 255, 254);
   position: absolute;
   font-size: 20px;
-  font-weight: bolder;
+  font-family: "Bebas Neue", sans-serif;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   display: flex;
-  opacity: 100%;
+  text-shadow: 0px 4px 2px rgb(0 0 0 / 65%);
+  opacity: 80%;
 }
 .map {
   background-image: url("gallery/Roadmap\ image.png");
@@ -121,29 +129,95 @@ header img {
 .maptitle span {
   opacity: 70%;
 }
+.container {
+  display: flex;
+  padding: 60px 120px;
+  gap: 40px;
+}
 .left-container {
   display: flex;
   flex-direction: column;
-  padding: 50px 120px;
-  gap: 20px ;
+  gap: 20px;
+  width: 513px;
 }
 .container1 {
   height: 112px;
   width: 513px;
-  background-color: wheat;
+  background-color: #eee9d9;
   border-radius: 60px;
   text-align: center;
-  display:flex ;
+  display: flex;
   justify-content: space-between;
   padding: 32px 32px;
+  opacity: 80%;
+  position: relative;
+  cursor: pointer;
 }
-.day1 {
-  display: block;
+.days:hover::after {
+  display: flex;
+  content: url("gallery/Frame\ 176.png");
+  position: relative;
+  top: 65px;
+  left: 360px;
+  transform: translateX(100%);
+  pointer-events: none;
 }
-.day1 p{
-    font-size: 24px;
+.container:hover::after {
+  display: flex;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 60px;
+  height: 112px;
+  width: 513px;
 }
-.day11 {
+.container2 {
+  height: 112px;
+  width: 513px;
+  background-color: #8bb8c1;
+  border-radius: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px;
+  opacity: 80%;
+}
+.container3 {
+  height: 112px;
+  width: 513px;
+  background-color: #aad8d7;
+  border-radius: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px;
+  opacity: 80%;
+}
+.container4 {
+  height: 112px;
+  width: 513px;
+  background-color: #8bc0bd;
+  border-radius: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px;
+  opacity: 80%;
+}
+.container5 {
+  height: 112px;
+  width: 513px;
+  background-color: #97cce0;
+  border-radius: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px;
+  opacity: 80%;
+}
+.days p {
+  font-size: 24px;
+}
+.day {
   font-size: 14px;
   font-weight: 600;
   line-height: 15px;
@@ -153,16 +227,175 @@ header img {
   height: 56px;
   align-content: center;
 }
-.day1 span img{
-    width: 14px;
-    height: 14px;
+.days span img {
+  width: 14px;
+  height: 14px;
 }
-.day1 span{
-    font-size: 14px;
-    display: flex;
-    
+.days span {
+  font-size: 14px;
+  display: flex;
 }
-footer {
-  background-color: aqua;
-  margin-top: 1000px;
+.rigth-container {
+  width: 647px;
+  display: flex;
+  position: relative;
+}
+.pin1 img {
+  position: relative;
+  top: 42px;
+  left: 279px;
+  width: 34px;
+  height: 34px;
+}
+.pin2 img {
+  position: relative;
+  top: 164px;
+  left: 107px;
+  width: 34px;
+  height: 34px;
+}
+.pin3 img {
+  position: relative;
+  top: 181px;
+  left: 492px;
+  width: 34px;
+  height: 34px;
+}
+.pin4 img {
+  position: relative;
+  top: 416px;
+  left: 279px;
+  width: 34px;
+  height: 34px;
+}
+.price {
+  background-image: url("gallery/Price&Footer\ image.png");
+  height: 1220px;
+}
+.pricetitle {
+  display: block;
+  text-align: center;
+}
+.pricetitle p {
+  font-size: 42px;
+  font-weight: bold;
+  padding-top: 160px;
+}
+.pricetitle span {
+  opacity: 60%;
+}
+.pricecontainer {
+  display: flex;
+  gap: 24px;
+  height: 527px;
+  width: 1200px;
+  padding: 79px 200px 350px 180px;
+}
+.pricecard {
+  width: 384px;
+  height: 527px;
+  border-radius: 10%;
+  background-color: #fafbfc;
+}
+.pricecardheader {
+  height: 92px;
+  width: 384px;
+  padding: 32px 24px;
+}
+.pricecardheader img {
+  width: 36px;
+}
+.pricecardheader p {
+  font-size: 18px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.pricecardcontent {
+  padding: 12px 24px 125px 24px;
+  display: block;
+}
+.pricecardcontent .dollar {
+  font-size: 40px;
+}
+.pricecardcontent .blur {
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  gap: 100px;
+}
+.pricecardcontent .blur1 {
+  opacity: 60%;
+  width: 235px;
+  height: 19px;
+  padding: 4px;
+}
+.pricecardcontent .blur span {
+  color: #fafbfc;
+  border-radius: 30px;
+  background-color: #6972b5;
+  font-size: 16px;
+  padding: 4px 16px 4px 16px;
+  width: 91px;
+  height: 27px;
+}
+.pricecardcontent .content {
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 12px;
+}
+.pricecardcontent .content p {
+  font-size: 16px;
+  padding: 1.5px 1.5px;
+  display: flex;
+  gap: 20px;
+}
+.pricecardcontent .content p img {
+  height: 20px;
+}
+.pricecardcontent .content .Includes {
+  font-size: 20px;
+  width: 256px;
+  height: 22px;
+  padding: 0 40px;
+}
+.button {
+  width: 336px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #a4d1e2;
+  padding: 12px 12px;
+}
+.button p {
+  color: #fafafa;
+  font-size: 16px;
+  padding: 0px 105.5px;
+}
+.footer {
+  display: flex;
+  width: 1140px;
+  height: 204px;
+  padding: 80px 120px 80px 180px;
+  gap: 20px;
+  margin-top: 265px;
+}
+.footer p img {
+  width: 20px;
+  height: 20px;
+}
+.footer p {
+  display: flex;
+  padding: 11px 15px;
+  background-color: #fafbfc;
+  border-radius: 40px;
+  color: #6972B5;
+  gap: 10px;
+}
+.footerlogo{
+  width: 101px;
+  height: 35px;
+  margin-left: 799px;
 }
