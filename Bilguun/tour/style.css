@@ -20,6 +20,9 @@
 .justify-between {
   justify-content: space-between;
 }
+.align-start {
+  align-items: start;
+}
 
 body {
   width: 100vw;
@@ -102,4 +105,89 @@ header img {
 
 .sectionTwo img {
   height: 370px;
+}
+
+.sectionTwo-container {
+  gap: 40px;
+  margin: 65px 0;
+}
+.sectionTwo-container img {
+  border-radius: 40px;
+  box-shadow:
+    10px 10px color-mix(in srgb, #29728b 25%, white),
+    -10px -10px color-mix(in srgb, #1f72aa 46%, white);
+}
+
+.roadMap {
+  background-image: url("./image/Roadmap.svg");
+  width: 100%;
+  height: 902px;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  gap: 60px;
+  padding-top: 120px;
+}
+
+.mapPin {
+  width: 512px;
+}
+
+.mapPin-btns {
+  display: grid;
+  gap: 24px;
+}
+.btn {
+  width: 100%;
+  border-radius: 100px;
+  padding: 30px;
+  border: 0;
+}
+.bg-bage {
+  background-color: #eee9d9;
+}
+.bg-green1 {
+  background-color: #8bb8c1;
+}
+.bg-green2 {
+  background-color: #aad8d7;
+}
+.bg-green3 {
+  background-color: #8bc0bd;
+}
+.bg-green4 {
+  background-color: #97cce0;
+}
+
+.mapTitle {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.mapSubtitle {
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 8px;
+}
+.days {
+  padding: 18px 8px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.footer {
+  background-image: url("./image/Price&Footer.svg");
+  height: 1120px;
+}
+
+.roadMapTitle {
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  background-color: #fafbfc;
+  padding: 24px;
+  border-radius: 40px;
+  width: 384px;
 }
