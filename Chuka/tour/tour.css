@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.pageOne{
+    background-image: url(image/HeroImage.svg);
+    background-size: cover;
+    background-position: center;
+    height: 773px;
+    width: 100%;
+    position: relative;
+    }
+    header{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+.text{
+ color: aliceblue;
+    display: flex;
+    gap: 50px;
+}
+.logo img{
+    width: 100px;
+    height: 34px;
+}
+.en{
+    font-weight: bold;
+    color: black;
+    font-size: small ;
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: 10px;
+}
