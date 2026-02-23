@@ -191,3 +191,10 @@ header img {
   border-radius: 40px;
   width: 384px;
 }
+
+.div {
+  display: none;
+}
+.hoverHide:hover + .div {
+  display: block;
+}
