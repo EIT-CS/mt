@@ -69,9 +69,9 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 }
 
 .mainTwo{
-  background-image: url("/Zoltuya/tour/img/Location.png");
+  background-image: url("img/Location.png");
   display: flex;
-  justify-content: center;    
+  justify-content: center;      
   align-items: center;        
   text-align: center;
   background-size: cover;
@@ -82,27 +82,31 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   .photoOne img {
   width: 275.49px;
   height: 370px;
-  border-radius: 20px;
+  border-radius: 40px;
   object-fit: cover;
-  box-shadow: 10px 10px 20px -10px #9DB8DA;
+  box-shadow: 8px 8px  #9DB8DA,
+  -8px -8px #7da2d0;
     margin-right: 40px;
 
 }
-.potoTwo img {
 
-width: 275.49px;
+.potoTwo img {
+  width: 275.49px;
   height: 370px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+   box-shadow: 8px 8px  #9DB8DA,
+  -8px -8px #7da2d0;
   margin-right: 40px;
 }
+
 .photoThree img{
-   height: 370px;
+  height: 370px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-    margin-right: 40px;
+  box-shadow: 8px 8px  #9DB8DA,
+  -8px -8px #7da2d0;
+  margin-right: 40px;
 
 }
 .photoFour img{
@@ -110,8 +114,21 @@ width: 275.49px;
  height: 370px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  box-shadow: 8px 8px  #9DB8DA,
+  -8px -8px #7da2d0;
  }
+
+
+.photoOne img:hover,
+.potoTwo img:hover,
+.photoThree img:hover,
+.photoFour img:hover {
+  filter: brightness(75%);
+  transition: 0.3s ease;    
+}
+
+
+
 .mainTwo span {
   position: relative;     
 }
@@ -121,7 +138,6 @@ width: 275.49px;
   border-radius: 20px;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 0 0 3px rgb(131, 132, 135); 
 }
 .overlay {
   
@@ -186,10 +202,11 @@ width: 275.49px;
   font-weight: normal;
 }
 .mainThree{
-  background-image: url(/Zoltuya/tour/img/Roadmap\ image.png);
+  background-image: url(img/Roadmap_image.png);
   background-size: contain;
  width: 100%;
  height: 952px;
+ position: relative;
 }
 .pgTwo{
   display: flex;
@@ -215,24 +232,93 @@ font-weight: bold;
 .fristWord{
   font-size: x-large;
   font-weight: bold;
-  
- 
-
-}
+ }
 
 .icon{
   width: 14px;
-  height: 14ppx;
+  height: 14px;
 }
-.Day1{
-   display: flex;
+.Day1 {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #EEE9D9;
   width: 400px;
-  padding: 32px 32px;
-  border-radius: 50px;
+    height: 30px;
+  padding: 32px;
+  border-radius: 400px;
+  opacity: 75%;
+  border: 5px solid transparent; 
+  transition: 0.3s;
 }
+
+.Day1:hover {
+  border-color: white;  
+}
+
+.Day2{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#9DB8DA;
+  width: 400px;
+    height: 30px;
+  padding: 32px 32px;
+  border-radius: 400px;
+    opacity: 80%;
+
+}
+.Day3{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(135, 242, 188);
+  width: 400px;
+    height: 30px;
+  padding: 32px 32px;
+  border-radius: 400px;
+    opacity: 80%;
+
+}
+.Day4{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #96c2ee;
+  width: 400px;
+  height: 30px;
+  padding: 32px 32px;
+  border-radius: 400px;
+    opacity: 80%;
+
+}
+.Day5{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c9a5f8;
+  width: 400px;
+    height: 30px;
+  padding: 32px 32px;
+  border-radius: 400px;
+    opacity: 80%;
+
+}
+.Day2, .Day3, .Day4, .Day5 {
+  
+  border: 5px solid transparent; 
+  transition: 0.3s;
+}
+.Day2:hover,
+.Day3:hover,
+.Day4:hover,
+.Day5:hover {
+  border-color: white;
+  cursor: pointer;
+}
+
+
+
 .one{
   display: flex;
   flex-direction: column;
@@ -247,12 +333,228 @@ font-weight: bold;
 align-items: center;
 justify-content: center;
 }
-.Day2{
-   display: flex;
+.pin1 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 280px;   
+  left: 890px;  
+  z-index: 5;
+}
+
+.pin2 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 400px;   
+  left: 730px;  
+  z-index: 5;
+}
+.pin3 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 414px;   
+  left: 1086px;  
+  z-index: 5;
+}
+
+.pin4 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 620px;   
+  left: 880px;  
+  z-index: 5;
+}
+.pin5 {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 50ox;   
+  left: 50px;  
+  z-index: 5;
+}
+.pin1, .pin2, .pin3, .pin4 .pin5 {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  z-index: 5;
+}
+
+/* Pin-ийн үндсэн байрлал */
+.pin1 { top: 280px; left: 890px; }
+.pin2 { top: 400px; left: 730px; }
+.pin3 { top: 414px; left: 1086px; }
+.pin4 { top: 620px; left: 880px; }
+.pin5 { top: 50px; left: 50px; } /* өөр байрлал map-д тохируулах */
+
+/* Pin дээр гарч ирэх зургууд */
+.pin1img, .pin2img, .pin3img, .pin4img, .pin5img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: none; /* анх нуугдсан */
+  z-index: 10;  /* pin-уудаас дээр гарах */
+}
+
+/* Зургийн байрлалыг pin-тай ижил */
+.pin1img { top: 260px; left: 870px; }
+.pin2img { top: 380px; left: 710px; }
+.pin3img { top: 394px; left: 1066px; }
+.pin4img { top: 600px; left: 860px; }
+.pin5img { top: 30px; left: 30px; } /* pin5 байрлалд тааруулж өөрчилнө */
+
+.mainFour{
+  background-image: url(img/Price&Footer_image.png);
+  background-size: cover;
+  height: 773px;
+}
+.pgTree{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  margin-top: 40px;
+}
+.pgTree p{
+margin-top: 20px;
+}
+.footer-text {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+}
+.footer-text h1{
+  margin-bottom: 0;
+}
+.footer-text p{
+  margin-bottom: 80px;
+}
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  width: 320px;
+  background: white;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: left;
+
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.card-header img {
+  width: 36px;
+  height: 36px;
+}
+.card h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.card span {
+  color: #777;
+  font-size: 14px;
+}
+
+.card h3 {
+  position: relative;
+  left: 20px;
+  margin-top: 25px;
+  font-size: 24px;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card li img {
+  width: 16px;
+  height: 16px;
+}
+
+.card button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 20px;
+  background: #A4D1E2;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.popular {
+  background: #e6f1f3;
+  transform: scale(1.05);
+}
+
+.footer2 {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #EEE9D9;
-  width: 400px;
-  padding: 32px 32px;
-  border-radius: 50px;
+  padding: 40px 80px;
+}
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: white;
+  padding: 10px 22px;
+  border-radius: 30px;    
+
+  width: auto;
+  height: auto;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.social-card img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-card p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #6972B5;
+}
+.socials {
+  display: flex;
+  gap: 16px;
+}
+.footerlogo img {
+  width: 120px;
+  height: auto;
+}
+.card button {
+  transition: 0.3s ease;
+}
+
+.card button:hover {
+  background: #6bbad6;   /* илүү тод өнгө */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
