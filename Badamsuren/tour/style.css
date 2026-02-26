@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .container {
   background-image: url("./image/HeroImage.svg");
   background-size: cover;
@@ -100,7 +106,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 50px;
   padding: 50px 0;
   background-image: url(./image/Location\ image.svg);
   background-size: cover;
@@ -113,12 +119,11 @@ header {
 }
 
 .location .photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 370px;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-  border: 3px solid rgb(131, 132, 135);
+  object-fit: cover;
+  box-shadow: 8px 8px  #9DB8DA,
+  -8px -8px #7da2d0;
 }
 
 .photo-text {
@@ -162,6 +167,7 @@ header {
 
 .day1 {
   width: 460px;
+  height: 80px;
   padding: 10px 32px;
   background: #f4efe3;
   border-radius: 50px;
@@ -173,6 +179,7 @@ header {
 
 .day2 {
   width: 460px;
+  height: 80px;
   padding: 10px 32px;
   background: #8BB8C1CC;
   border-radius: 50px;
@@ -184,6 +191,7 @@ header {
 
 .day3 {
   width: 460px;
+  height: 80px;
   padding: 10px 32px;
   background: #AAD8D7CC;
   border-radius: 50px;
@@ -195,6 +203,7 @@ header {
 
 .day4 {
   width: 460px;
+  height: 80px;
   padding: 10px 32px;
   background: #8BC0BDCC;
   border-radius: 50px;
@@ -206,6 +215,7 @@ header {
 
 .day5 {
   width: 460px;
+  height: 80px;
   padding: 10px 32px;
   background: #97CCE0CC;
   border-radius: 50px;
@@ -300,12 +310,15 @@ header {
   align-items: center;
   margin: 0%;
 }
-.footer-text h1{
+
+.footer-text h1 {
   margin-bottom: 0;
 }
-.footer-text p{
+
+.footer-text p {
   margin-bottom: 80px;
 }
+
 .pricing {
   display: flex;
   justify-content: center;
@@ -319,18 +332,20 @@ header {
   border-radius: 30px;
   text-align: left;
 
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
+
 .card-header {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .card-header img {
   width: 36px;
   height: 36px;
 }
+
 .card h1 {
   font-size: 40px;
   margin: 10px 0;
@@ -347,6 +362,7 @@ header {
   margin-top: 25px;
   font-size: 24px;
 }
+
 .card ul {
   list-style: none;
   padding: 0;
@@ -376,6 +392,11 @@ header {
   cursor: pointer;
 }
 
+.footer .card button:hover {
+  background: #0d0d0d;
+  color: white;
+}
+
 .popular {
   background: #e6f1f3;
   transform: scale(1.05);
@@ -393,6 +414,7 @@ header {
 
   padding: 40px 80px;
 }
+
 .social-card {
   display: flex;
   align-items: center;
@@ -405,7 +427,7 @@ header {
   width: auto;
   height: auto;
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .social-card img {
@@ -419,11 +441,42 @@ header {
   margin: 0;
   color: #6972B5;
 }
+
 .socials {
   display: flex;
   gap: 16px;
 }
+
 .footerlogo img {
   width: 120px;
   height: auto;
+}
+
+.day1,
+.day2,
+.day3,
+.day4,
+.day5 {
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.day1:hover,
+.day2:hover,
+.day3:hover,
+.day4:hover,
+.day5:hover {
+  border: 5px solid #fff;
+}
+
+.location .photo:hover img {
+  filter: brightness(75%);
+}
+
+.footer .card:hover {
+ height: 390px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 8px 8px  #a5a6a8,
+  -8px -8px #afb1b1;
 }
