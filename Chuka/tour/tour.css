@@ -5,12 +5,12 @@
 }
 .pageOne{
     background-image: url(image/HeroImage.svg);
-    background-size: cover;
-    background-position: center;
-    height: 773px;
     width: 100%;
-    position: relative;
-    }
+    background-size: cover;
+    height: 980px;
+    margin: auto;
+
+}
     header{
         max-width: 1200px;
         margin: 0 auto;
@@ -45,13 +45,31 @@
 .hero{
   position: relative;
   height: 100vh;
+  
 }
 
 .words{
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   text-align: center;
   color: white;
+  font-size: 50px;
+  
+}
+
+.Location{
+    background-image: url(image/Location.svg);
+    height: 512px;
+    width: 100%;
+    padding: auto;
+}
+
+.cart img{
+    height: 370px;
+    width: 275.49px;
+    border: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px;
 }
