@@ -122,8 +122,8 @@ header {
   height: 370px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 8px 8px  #9DB8DA,
-  -8px -8px #7da2d0;
+  box-shadow: 8px 8px #9DB8DA,
+    -8px -8px #7da2d0;
 }
 
 .photo-text {
@@ -474,9 +474,65 @@ header {
 }
 
 .footer .card:hover {
- height: 390px;
+  height: 390px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 8px 8px  #a5a6a8,
-  -8px -8px #afb1b1;
+  box-shadow: 8px 8px #a5a6a8,
+    -8px -8px #afb1b1;
+}
+
+.pin-day1,
+.pin-day2,
+.pin-day3,
+.pin-day4,
+.pin-day5 {
+  position: absolute;
+  width: 280px;
+  height: auto;
+  display: none;
+}
+
+.pin-day1 {
+  left: 980px;
+  top: 60px;
+}
+
+.pin-day2 {
+  left: 800px;
+  top: -53px;
+}
+
+.pin-day3 {
+  left: 635px;
+  top: 100px;
+}
+
+.pin-day4 {
+  left: 620px;
+  top: -90px;
+}
+
+.pin-day5 {
+  left: 780px;
+  top: -90px;
+}
+
+.day1:hover~.mapphoto .pin-day1 {
+  display: block;
+}
+
+.day2:hover~.mapphoto .pin-day2 {
+  display: block;
+}
+
+.day3:hover~.mapphoto .pin-day3 {
+  display: block;
+}
+
+.day4:hover~.mapphoto .pin-day4 {
+  display: block;
+}
+
+.day5:hover~.mapphoto .pin-day5 {
+  display: block;
 }
